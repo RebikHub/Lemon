@@ -1,0 +1,799 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #eaeaea;
+    }
+    
+    @font-face {
+        font-family: "Josefin Sans";
+        src: url(./fonts/JosefinSans.ttf);
+    }
+    
+    @font-face {
+        font-family: "Playfair Display";
+        src: url(./fonts/PlayfairDisplay.ttf);
+    }
+    
+    @font-face {
+        font-family: "Font Awesome";
+        src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css)
+    }
+    
+    @font-face {
+        font-family: "Open Sans";
+        src: url(/fonts/2211.ttf);
+    }
+    
+    .big_logo {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        width: 382px;
+        height: 159px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../images/Big-logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .title_menu {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding-left: 95px;
+        padding-right: 95px;
+        width: 1120px;
+        height: 123px;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(0 0 6.5px rgba(11, 12, 12, 0.15));
+        background-color: #f8f8f8;
+    }
+    
+    .header_logo {
+        width: 87px;
+        height: 36px;
+        background-image: url(../images/mini-logo.png);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .header_search {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .search {
+        width: 162px;
+        height: 28px;
+        border: 1px solid #c2c2c2;
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+        text-transform: uppercase;
+        padding-left: 50px;
+        background-image: url(../images/Search-icon.png);
+        background-position: 30px;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+    }
+    
+    .header_nav {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .nav {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav_list {
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 22px;
+    }
+    
+    .nav_list a {
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+    }
+    
+    .sub_nav {
+        position: absolute;
+        box-sizing: border-box;
+        top: 20px;
+        left: -40px;
+        padding-left: 30px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        display: none;
+        list-style: none;
+        width: 150px;
+        filter: drop-shadow(0.366px 2.978px 3.5px rgba(11, 12, 12, 0.14));
+        background-color: #ffffff;
+        opacity: 0.75;
+    }
+    
+    .nav_list:hover>.sub_nav {
+        display: inherit;
+    }
+    
+    .sub_list a {
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 32px;
+        color: #b7b7b7;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+    }
+    
+    .sub_list>a:hover {
+        text-decoration: underline;
+        color: #000000;
+    }
+    
+    .hero_page {
+        position: relative;
+        margin-top: 85px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 95px;
+        width: 1120px;
+        height: 438px;
+        filter: drop-shadow(0 0 6.5px rgba(0, 0, 0, 0.15));
+        background-color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../images/Hero-photo.png);
+        background-position: center;
+    }
+    
+    .hero_page_logo {
+        margin-top: 50px;
+        width: 252px;
+        height: 105px;
+        background-image: url(../images/hero-logo.png);
+    }
+    
+    .hero_title {
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: #921026;
+        font-weight: 400;
+        font-family: "Playfair Display";
+        text-transform: capitalize;
+        margin-top: 35px;
+    }
+    
+    .hero_text {
+        width: 329px;
+        height: 108px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+        margin-top: 25px;
+    }
+    
+    .hero_get {
+        margin-top: auto;
+        /* margin-bottom: 55px; */
+        width: 105px;
+        height: 28px;
+        background-color: #ffffff;
+        border: 1px solid #c2c2c2;
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+        text-transform: uppercase;
+    }
+    
+    .elipses {
+        margin: auto 17px 23px auto;
+    }
+    
+    .elipse_menu {
+        height: 8px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .elipse_list {
+        padding-right: 10px;
+        list-style: none;
+    }
+    
+    .block_recipees {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 85px;
+        width: 1120px;
+        height: 373px;
+        filter: drop-shadow(0 0 6.5px rgba(0, 0, 0, 0.15));
+        background-color: #ffffff;
+    }
+    
+    .recipes_card {
+        width: 313px;
+        height: 208px;
+        margin-top: 40px;
+        background-color: #8e2e2e;
+    }
+    
+    .pie {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/pie.png);
+    }
+    
+    .sandwich {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/sandwich.png);
+    }
+    
+    .ice_cream {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/cake.png);
+    }
+    
+    .recipes_title {
+        margin-top: 15px;
+        font-size: 18px;
+        font-family: "Josefin Sans";
+        color: #000000;
+        font-weight: 300;
+    }
+    
+    .recipes_time,
+    .recipes_comment,
+    .recipes_vis {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0px;
+        color: #555555;
+        font-weight: 300;
+        font-family: "Open Sans";
+    }
+    
+    .recipes_time {
+        padding-right: 7px;
+        margin-right: 3px;
+        border-right: 1px solid #6f6f6f;
+    }
+    
+    .recipes_time::before {
+        content: "";
+        margin-right: 3px;
+        vertical-align: top;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/clock.png);
+        width: 12px;
+        height: 12px;
+    }
+    
+    .recipes_comment::before {
+        content: "";
+        margin-right: 3px;
+        vertical-align: top;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/comment.png);
+        width: 12px;
+        height: 12px;
+    }
+    
+    .recipes_vis::before {
+        content: "";
+        margin-right: 3px;
+        vertical-align: top;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/view.png);
+        width: 12px;
+        height: 12px;
+    }
+    
+    .recipe_conteiner {
+        position: relative;
+        display: flex;
+        width: 1120px;
+        height: 438px;
+        margin-bottom: 100px;
+        margin-top: 85px;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(0 0 6.5px rgba(0, 0, 0, 0.15));
+        background-color: #ffffff;
+        background-image: url(../images/recipe-photo.png);
+        background-position: center;
+    }
+    
+    .recipe_conteiner::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 450px;
+        width: 49px;
+        height: 62px;
+        background-color: rgba(0, 0, 0, 0.5019607843137255);
+        background-image: url(../images/Icon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .recipe_content {
+        box-sizing: border-box;
+        width: 515px;
+        padding-top: 15px;
+        padding-bottom: 35px;
+        margin-left: 555px;
+    }
+    
+    .recipe_content_title {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 32px;
+        color: #055555;
+        font-weight: 900;
+        font-family: "Playfair Display";
+    }
+    
+    .time_diff_button {
+        display: flex;
+        margin-top: 25px;
+        width: 495px;
+    }
+    
+    .time_diff {
+        display: inline;
+    }
+    
+    .recipe_cont_time {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #555555;
+        font-weight: 300;
+        font-family: "Open Sans";
+    }
+    
+    .recipe_cont_time::before {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 15px;
+        margin-right: 5px;
+        background-image: url(../images/clock-icon.png);
+        background-repeat: no-repeat;
+        vertical-align: inherit;
+    }
+    
+    .recipe_cont_diff {
+        display: inline-block;
+        font-size: 18px;
+        letter-spacing: 0px;
+        color: #555555;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+    }
+    
+    .recipe_cont_diff::before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        width: 26px;
+        height: 24px;
+        background-image: url(../images/easy-icon.png);
+        background-repeat: no-repeat;
+        vertical-align: text-bottom;
+    }
+    
+    .recipe_cont_button {
+        width: 105px;
+        height: 28px;
+        margin-left: auto;
+        background-color: #ffffff;
+        border: 1px solid #c2c2c2;
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+        text-transform: uppercase;
+    }
+    
+    .recipe_description,
+    .recipe_desc_title,
+    .recipe_desc_text {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+    }
+    
+    .recipe_desc_title {
+        font-weight: 900;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .recipe_desc_all {
+        overflow-y: auto;
+        margin-top: 25px;
+        margin-bottom: 35px;
+        width: 515px;
+        height: 278px;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 2px;
+        height: 267px;
+        background-color: #c2c2c2;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        width: 2px;
+        height: 126px;
+        background-color: #555555;
+    }
+    /* ------------ */
+    
+    .post_conteiner {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 838px;
+        height: 187px;
+        filter: drop-shadow(0 0 6.5px rgba(0, 0, 0, 0.15));
+        background-color: #ffffff;
+        padding: 30px 45px 33px 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .post_title_links {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .conteiner_title {
+        margin-left: 0;
+        margin-right: auto;
+        font-size: 24px;
+        font-style: italic;
+        letter-spacing: 1px;
+        color: #000000;
+        font-family: "Josefin Sans";
+    }
+    
+    .conteiner_links {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    
+    .link {
+        font-size: 16px;
+        font-style: italic;
+        letter-spacing: 0px;
+        color: #000000;
+        font-family: "Josefin Sans";
+        text-decoration: none;
+    }
+    
+    .post_form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 753px;
+        height: 89px;
+        background-color: #eeeeee;
+        margin-top: auto;
+    }
+    
+    .post_img {
+        width: 57px;
+        height: 57px;
+        margin-left: 18px;
+        margin-right: auto;
+    }
+    
+    .post_input {
+        width: 496px;
+        height: 40px;
+        background-color: #ffffff;
+        border: 1px solid #c2c2c2;
+        margin-right: 4px;
+    }
+    
+    .post_button {
+        width: 85px;
+        height: 40px;
+        margin-right: 25px;
+        background-color: #383737;
+        border: 1px solid #c2c2c2;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+        text-transform: uppercase;
+        border: 1px solid black;
+    }
+    /* ---Comments--- */
+    
+    .comments_conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin-top: 45px;
+        width: 838px;
+        filter: drop-shadow(0 0 6.5px rgba(0, 0, 0, 0.15));
+        background-color: #ffffff;
+        padding: 0px 45px 55px 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .comments_conteiner::after {
+        content: "";
+        width: 100%;
+        padding: 0px 45px 0px 40px;
+        border-bottom: 2px solid #555555;
+    }
+    
+    .comments_title {
+        width: 100%;
+        height: 56px;
+        line-height: 56px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: #000000;
+        font-family: "Josefin Sans";
+        font-style: italic;
+        text-transform: capitalize;
+        font-weight: normal;
+    }
+    
+    .comments_body {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .body_message {
+        width: 100%;
+        border-top: 2px solid #555555;
+        padding: 30px 0 25px 10px;
+    }
+    
+    .message_answer {
+        margin-left: auto;
+        width: calc(100% - 77px);
+        border-top: 2px solid #555555;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .body_message_title {
+        display: flex;
+        width: 100%;
+    }
+    
+    .message_title_ava {
+        width: 56px;
+        height: 56px;
+        margin-right: 24px;
+    }
+    
+    .message_author {
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+    }
+    
+    .message_author_name {
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Josefin Sans";
+        text-transform: capitalize;
+    }
+    
+    .message_reply {
+        margin-left: 8px;
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #629494;
+        font-weight: 700;
+        font-family: "Josefin Sans";
+    }
+    
+    .message_time {
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #629494;
+        font-weight: 700;
+        font-family: "Josefin Sans";
+    }
+    
+    .message_likes {
+        display: flex;
+        align-items: center;
+        width: 80px;
+        margin-left: auto;
+    }
+    
+    .to_share {
+        line-height: 12px;
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Josefin Sans";
+    }
+    
+    .to_share::after {
+        content: "";
+        background-image: url(../images/toshare.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-left: 5px;
+        width: 11px;
+        height: 11px;
+    }
+    
+    .likes {
+        width: 27px;
+        height: 12px;
+        margin-left: 12px;
+        background-image: url(../images/likes.png);
+    }
+    
+    .message_text {
+        padding-left: 80px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+    }
+    
+    .text_answer {
+        font-weight: 600;
+    }
+    
+    .message_img {
+        display: flex;
+        position: relative;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        margin-left: 80px;
+        width: 313px;
+        height: 208px;
+        background-color: #8e2e2e;
+        background-image: url(../images/comments-salat.png);
+    }
+    
+    .message_img::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-image: url(../images/Fonforlogopinterest.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 54px;
+        height: 54px;
+        top: 10px;
+        left: calc(100% - 64px);
+    }
+    
+    .message_img::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        background-image: url(../images/logo-pinterest.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        top: 22px;
+        left: calc(100% - 52px);
+    }
+    
+    .more_comments {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .comments_list {
+        display: flex;
+        width: 838px;
+        height: 92px;
+        filter: drop-shadow(0 0 6.5px rgba(0, 0, 0, 0.15));
+        background-color: #ffffff;
+        margin: 45px auto 45px auto;
+    }
+    
+    .comments_nav {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .comments_nav_ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+    }
+    
+    .comments_nav_ul li {
+        margin-left: 30px;
+    }
+    
+    .comments_nav ul li a {
+        text-decoration: none;
+        line-height: 18px;
+        font-size: 18px;
+        letter-spacing: 0px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Josefin Sans";
+    }
+    
+    .arrow_left {
+        display: flex;
+        background-image: url(../images/arrleft.png);
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 18px;
+    }
+    
+    .arrow_right {
+        display: flex;
+        background-image: url(../images/arrright.png);
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 18px;
+    }
